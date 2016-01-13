@@ -160,9 +160,11 @@ bool MDPVersion::is8x26() {
     //                                        0000   -  minor number
     // 8x26 v1 minor number is 0000
     //      v2 minor number is 0001 etc..
+#if 0
     if( mMdpRev >= MDSS_MDP_HW_REV_101 && mMdpRev < MDSS_MDP_HW_REV_102) {
         return true;
     }
+#endif
     return false;
 }
 
